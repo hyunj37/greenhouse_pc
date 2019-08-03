@@ -71,10 +71,22 @@
 #contents .cont-banner .arrows ul li.arrow-L a {background:url(../images/icon/icon-set.png) no-repeat; background-position:0 0;}
 #contents .cont-banner .arrows ul li.arrow-R a {background:url(../images/icon/icon-set.png) no-repeat; background-position:0 -56px;}
 
-/*md's pick*/
+/* contents 레이아웃 */
 #contents .cont-box {margin-top:100px; overflow:hidden}
+#contents .cont-box h3 {font-size:40px; margin-bottom:20px; font-weight:bold; letter-spacing:-4px}
+
+/* contents 레아아웃 - 물품정보 */
+#contents .cont-box .pro-info .comment {}
+#contents .cont-box .pro-info .name {font-size:18px; font-weight:bold;}
+#contents .cont-box .pro-info .price {}
+#contents .cont-box .pro-info .price.discount .percent {display:inline; font-weight:bold; margin-right:5px; color:#f52929}
+#contents .cont-box .pro-info .price.discount .original {display:inline; text-decoration: line-through; font-size:12px; color:#666; margin-left:5px;}
+#contents .cont-box .pro-info .price .original {display:none}
+#contents .cont-box .pro-info .price .percent {display:none}
+#contents .cont-box .pro-info .price .totoal {}
+
+/* MD's PICK */
 #contents .cont-box .md-pick {position:relative;}
-#contents .cont-box .md-pick h3 {font-size:40px; margin-bottom:20px; font-weight:bold; letter-spacing:-4px}
 #contents .cont-box .md-pick .pick {overflow:hidden}
 #contents .cont-box .md-pick .pick .hash-tag {position:absolute; top:22px; font-size:18px; text-decoration:underline}
 #contents .cont-box .md-pick .pick .hash-tag:hover {color:#6d9479}
@@ -86,19 +98,30 @@
 #contents .cont-box .md-pick .pick li {float:left; margin-right:40px;}
 #contents .cont-box .md-pick .pick li:last-child {margin-right:0} 
 #contents .cont-box .md-pick .pick .pro-info {margin-top:10px}
-#contents .cont-box .md-pick .pick .pro-info .comment {}
-#contents .cont-box .md-pick .pick .pro-info .name {font-size:18px; font-weight:bold;}
-#contents .cont-box .md-pick .pick .pro-info .price {}
-#contents .cont-box .md-pick .pick .pro-info .price.discount .original {display:inline; text-decoration: line-through; font-size:12px; color:#666; margin-left:5px;}
-#contents .cont-box .md-pick .pick .pro-info .price .original {display:none}
-#contents .cont-box .md-pick .pick .pro-info .price .totoal {}
-#contents .cont-box .md-pick .pick .pro-info .price {}
+
 
 /* 중간 띠배너 */
 #contents .cont-box .banner-bar {margin-top:100px; background-color:#e7fc90}
 
+/* BEST ITEM */
+#contents .cont-box .best-item {margin-top:100px;}
+#contents .cont-box .best-item .best-list li {float:left; position:relative; overflow:hidden}
+#contents .cont-box .best-item .best-list li.top-best {margin-right:40px}
+#contents .cont-box .best-item .best-list li:nth-child(2n) {margin-right:40px}
+#contents .cont-box .best-item .best-list li:nth-child(1),
+#contents .cont-box .best-item .best-list li:nth-child(2) {margin-bottom:40px}
+#contents .cont-box .best-item .best-list li a {display:block; width:290px; height:290px;}
+#contents .cont-box .best-item .best-list li.top-best a {width:620px; height:620px;}
+#contents .cont-box .best-item .best-list li .pro-info {position:absolute; top:290px; left:0; width:256px; height:46px; padding:17px; overflow:hidden; background-color:rgba(0,0,0,.3); transition:all .5s}
+#contents .cont-box .best-item .best-list li.top-best .pro-info {width:586px; top:620px;}
+#contents .cont-box .best-item .best-list li .pro-info.on {top:210px}
+#contents .cont-box .best-item .best-list li.top-best .pro-info.on {top:540px}
 
-#footer {overflow:hidden}
+
+
+
+/* footer */
+#footer {overflow:hidden; margin-top:100px}
 
 
 

@@ -122,7 +122,14 @@ $('.hash-tag').each(function(index){
     });
 });
 
-
+//mouseover css effect//
+//물품정보
+$('.best-item .best-list li').hover(function(){
+    $(this).find('.pro-info').addClass('on');
+},
+                                   function(){
+    $(this).find('.pro-info').removeClass('on');
+});
 
 
 
