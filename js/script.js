@@ -188,7 +188,7 @@ function slideL() {
 
     var pcnt = Math.abs(position2/listWid2);
     $('.interior_view li').hide('fast');
-    $('.interior_view li').eq(pcnt).fadeIn('fast');
+    $('.interior_view li').eq(pcnt).fadeIn();
 }
 
 $('.cont-arrow-R').click(function(){
