@@ -132,11 +132,69 @@ $('.best-item .best-list li').hover(function(){
 });
 
 
+//콘텐츠 물품리스트 슬라이드
+var listLeng = $('.new-list ul li').length;
+var listWid = $('.new-list ul li').innerWidth();
+var listPdR = $('.new-list ul li').css('padding-right').replace(/[^-\d\.]/g, '');
+var listAllWid = listWid*listLeng-listPdR;
+$('.new-list ul').css('width', listAllWid);
 
+var position = 0;
+$('.list-arrow-R').click(function(){
+    if(position !== -(listAllWid-$('.new-list').width())){
+        position -= listWid;
+    }
+    $('.new-list ul').animate({left:position});
+});
 
+$('.list-arrow-L').click(function(){
+    if(position !== 0){
+        position += listWid;
+    }
+    $('.new-list ul').animate({left:position});
+});
 
+//콘텐츠 배너 무한슬라이드
+$('.interior-subject .subject-box ul').clone().appendTo('.interior-subject .subject-box');
 
+var listLeng2 = $('.interior-subject .subject-box ul li').length;
+var listWid2 = $('.interior-subject').width();
+var listAllWid2 = listWid2*listLeng2;
+$('.interior-subject .subject-box').css('width', listAllWid2);
 
+var position2 = 0;
+function slideR() {
 
+    position2 -= listWid2;
+    $('.interior-subject .subject-box').animate({left:position2},'fast',function(){
+        if(position2 == -listAllWid2/2){
+            $('.interior-subject .subject-box').stop().css('left', 0);
+            position2 = 0;
+        }
 
+        var pcnt = Math.abs(position2/listWid2);
+        $('.interior_view li').hide();
+        $('.interior_view li').eq(pcnt).fadeIn();
+        });
+}
 
+function slideL() {
+    if(position2 === 0){
+        position2 = -listAllWid2/2;
+        $('.interior-subject .subject-box').stop().css('left', -listAllWid2/2);
+    }
+    position2 += listWid2;
+    $('.interior-subject .subject-box').stop().animate({left:position2},'fast');
+
+    var pcnt = Math.abs(position2/listWid2);
+    $('.interior_view li').hide('fast');
+    $('.interior_view li').eq(pcnt).fadeIn('fast');
+}
+
+$('.cont-arrow-R').click(function(){
+    slideR();
+});
+
+$('.cont-arrow-L').click(function(){
+    slideL();
+});

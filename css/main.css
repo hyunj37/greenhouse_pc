@@ -6,7 +6,7 @@
 #skip a:active, 
 #skip a:focus {top: 0;}
 
-/** 레이아웃 **/
+/** 전체 레이아웃 **/
 .wrapper {width:100%;}
 .container {position:relative; width:1280px; margin:0 auto;}
 
@@ -71,11 +71,12 @@
 #contents .cont-banner .arrows ul li.arrow-L a {background:url(../images/icon/icon-set.png) no-repeat; background-position:0 0;}
 #contents .cont-banner .arrows ul li.arrow-R a {background:url(../images/icon/icon-set.png) no-repeat; background-position:0 -56px;}
 
-/* contents 레이아웃 */
+/* 콘텐츠 공통 레이아웃 */
 #contents .cont-box {margin-top:100px; overflow:hidden}
 #contents .cont-box h3 {font-size:40px; margin-bottom:20px; font-weight:bold; letter-spacing:-4px}
+#contents .cont-box .sub-title {position:absolute; top:27px; left:200px; font-size:15px;}
 
-/* contents 레아아웃 - 물품정보 */
+/* 콘텐츠 공통 레아아웃 - 물품정보 */
 #contents .cont-box .pro-info .comment {}
 #contents .cont-box .pro-info .name {font-size:18px; font-weight:bold;}
 #contents .cont-box .pro-info .price {}
@@ -84,6 +85,11 @@
 #contents .cont-box .pro-info .price .original {display:none}
 #contents .cont-box .pro-info .price .percent {display:none}
 #contents .cont-box .pro-info .price .totoal {}
+
+/* contents 공통 레이아웃 - 버튼*/
+/*더보기버튼*/
+#contents .cont-box .more-btn {font-size:20px; position:relative; padding-right:15px; display:inline-block}
+#contents .cont-box .more-btn:after {content:''; background:url(../images/icon/icon-set.png) no-repeat; width:10px; height:17px; background-position:0 -256px; position:absolute; top:7px; left:58px}
 
 /* MD's PICK */
 #contents .cont-box .md-pick {position:relative;}
@@ -99,17 +105,16 @@
 #contents .cont-box .md-pick .pick li:last-child {margin-right:0} 
 #contents .cont-box .md-pick .pick .pro-info {margin-top:10px}
 
-
 /* 중간 띠배너 */
 #contents .cont-box .banner-bar {margin-top:100px; background-color:#e7fc90}
 
 /* BEST ITEM */
-#contents .cont-box .best-item {margin-top:100px;}
-#contents .cont-box .best-item .best-list li {float:left; position:relative; overflow:hidden}
+#contents .cont-box .best-item {margin-top:100px; overflow:hidden;}
+#contents .cont-box .best-item .best-list li {float:left; position:relative; overflow:hidden;}
 #contents .cont-box .best-item .best-list li.top-best {margin-right:40px}
 #contents .cont-box .best-item .best-list li:nth-child(2n) {margin-right:40px}
-#contents .cont-box .best-item .best-list li:nth-child(1),
-#contents .cont-box .best-item .best-list li:nth-child(2) {margin-bottom:40px}
+#contents .cont-box .best-item .best-list li:nth-child(2),
+#contents .cont-box .best-item .best-list li:nth-child(3) {margin-bottom:40px}
 #contents .cont-box .best-item .best-list li a {display:block; width:290px; height:290px;}
 #contents .cont-box .best-item .best-list li.top-best a {width:620px; height:620px;}
 #contents .cont-box .best-item .best-list li .pro-info {position:absolute; top:290px; left:0; width:256px; height:46px; padding:17px; overflow:hidden; background-color:rgba(0,0,0,.3); transition:all .5s}
@@ -117,11 +122,66 @@
 #contents .cont-box .best-item .best-list li .pro-info.on {top:210px}
 #contents .cont-box .best-item .best-list li.top-best .pro-info.on {top:540px}
 
+/* NEW ITEM */
+#contents .cont-box .new-item {margin-top:130px}
+#contents .cont-box .new-item .list-arrow {position:absolute; right:10px; top:27px}
+#contents .cont-box .new-item .list-arrow li {float:left;}
+#contents .cont-box .new-item .list-arrow li.list-arrow-L {margin-right:15px}
+#contents .cont-box .new-item .list-arrow li a {text-indent:-9999px; overflow:hidden; display:block; width:12px; height:21px; background:url(../images/icon/icon-set.png) no-repeat;}
+#contents .cont-box .new-item .list-arrow li.list-arrow-L a {background-position:0 -274px;}
+#contents .cont-box .new-item .list-arrow li.list-arrow-R a {background-position:0 -296px;}
+#contents .cont-box .new-item .new-list {position:relative; height:292px; overflow:hidden}
+#contents .cont-box .new-item .new-list ul {position:absolute;}
+#contents .cont-box .new-item .new-list li {float:left; padding-right:30px}
+#contents .cont-box .new-item .new-list li:last-child {padding-right:0}
+#contents .cont-box .new-item .new-list li .pro-info {padding-top:14px}
+#contents .cont-box .new-item .new-list li a {display:block; width:232px; height:232px}
 
+
+/* INTERIOR */
+#contents .cont-box .interior {margin-top:130px}
+#contents .cont-box .interior .interior-article {background:url(../images/interior_bg.jpg) no-repeat; height:700px; overflow:hidden; position:relative}
+#contents .cont-box .interior .interior-article .interior-subject {width:380px; height:230px; margin:255px 87px 0 87px; position:relative; float:left; overflow:hidden}
+#contents .cont-box .interior .interior-article .interior-subject  .subject-box {position:absolute; left:0}
+#contents .cont-box .interior .interior-article .interior-subject .subject-box ul li {float:left; padding-left:83px; width:297px}
+#contents .cont-box .interior .interior-article .interior-subject .subject-box ul li .main-subject {font-size:40px; font-weight:bold; letter-spacing: -4px;}
+#contents .cont-box .interior .interior-article .interior-subject  .subject-box ul li .sub-subject {font-size:30px; letter-spacing: -4px; line-height: 1.2;}
+#contents .cont-box .interior .interior-article .interior-subject .subject-box ul li .more-btn {margin-top:70px}
+#contents .cont-box .interior .interior-article .interior_view {float:right; width:726px; height:620px; margin-top:40px; position:relative}
+#contents .cont-box .interior .interior-article .interior_view ul  li {position:absolute; top:0; left:0; display:none;}
+#contents .cont-box .interior .interior-article .interior_view ul  li:first-child {display:block;}
+#contents .cont-box .interior .interior-article .cont-arrows li {position:absolute; top:310px}
+#contents .cont-box .interior .interior-article .cont-arrows li.cont-arrow-R {right:813px;}
+#contents .cont-box .interior .interior-article .cont-arrows li.cont-arrow-L {left:87px;}
+#contents .cont-box .interior .interior-article .cont-arrows li a {text-indent:-9990px; overflow:hidden; width:16px; height:29px; background:url(../images/icon/icon-set.png) no-repeat; display:block}
+#contents .cont-box .interior .interior-article .cont-arrows li.cont-arrow-R a {background-position:0 -226px}
+#contents .cont-box .interior .interior-article .cont-arrows li.cont-arrow-L a {background-position:0 -196px}
+
+/* NOTICE */
+#contents .cont-box .info {margin-top:100px}
+#contents .cont-box .info .notice {width:620px; float:left; position:relative}
+#contents .cont-box .info .notice .more-btn {position:absolute; top:22px; right:0}
+#contents .cont-box .info .notice .notice-table table {font-size:20px}
+#contents .cont-box .info .notice .notice-table .notice-title {padding-left:20px; position:relative; width:480px; height:30px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; word-wrap:normal;}
+#contents .cont-box .info .notice .notice-table .notice-title:before {content:''; width:8px; height:20px; background-color:#333; display:inline-block; position:absolute; top:6px; left:0}
+#contents .cont-box .info .notice .notice-table .notice-date {width:120px; float:right}
+
+/* contact */
+#contents .cont-box .info .contact {width:620px; float:right}
+#contents .cont-box .info .contact .sns-list {padding-top:25px; overflow:hidden}
+#contents .cont-box .info .contact .sns-list li {float:left; margin-right:30px;}
+#contents .cont-box .info .contact .sns-list li:last-child {margin-right:0}
 
 
 /* footer */
-#footer {overflow:hidden; margin-top:100px}
+#footer {overflow:hidden; margin-top:100px; background-color:#eee; height:230px; padding-top:90px}
+#footer .slogo {width:236px; height:30px; text-indent:-9999px; overflow:hidden; background:url(../images/logo2.png) no-repeat; float:left; margin-right:94px;}
+#footer .co-info {float:left; font-size:14px}
+#footer .co-info .site-name {font-size:20px; margin-bottom:20px;}
+#footer .service {float:right; margin-right:86px}
+#footer .service .cs-center {font-size:20px; font-weight:bold; color:#496a53}
+#footer .service .cs-number {font-size:25px; color:#496a53}
+#footer .service .cs-time span {display:block; font-size:14px;}
 
 
 
