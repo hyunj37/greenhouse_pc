@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/** 스킵 네비게이션 **/
+/** skip nav **/
 #skip {position:relative}
 #skip a {position:absolute; width:130px; left:0; top:-40px; border:1px solid #fff; color:#fff; background:#333; line-height:30px; text-align:center}
 #skip a:active, 
@@ -10,8 +10,7 @@
 .wrapper {width:100%;}
 .container {position:relative; width:1280px; margin:0 auto;}
 
-/** 헤더 **/
-#header {}
+/** header **/
 #header .top-head {height:50px; background-color:#496a53; }
 #header .top-head ul.top-menu {float:right; margin-top:15px;}
 #header .top-head .top-menu li {float:left; margin-left:20px;}
@@ -33,8 +32,8 @@
 #header .main-head .search-form input {width:100%; border:none; background-color:#eee; height:33px;}
 #header .main-head .search-form .search-btn {position:absolute; top:0; right:10px; text-indent:-999px; overflow:hidden; width:33px; height:33px; background:url(../images/icon/search-icon.png) no-repeat;}
 
-/** 콘텐츠 **/
-/* 배너 */
+/** contents **/
+/* visual banner */
 #contents .cont-banner {width:100%;}
 #contents .cont-banner.on0 {background-color:#e4e4e4}
 #contents .cont-banner.on1 {background-color:#dee6d9}
@@ -52,7 +51,7 @@
 #contents .cont-banner .banner-box li a span.main-txt1 {top:150px}
 #contents .cont-banner .banner-box li a span.main-txt2 {top:220px}
 #contents .cont-banner .banner-box li a span.sub-txt {font-size:16px; top:300px}
-/*롤링버튼*/
+
 #contents .cont-banner .rolling-btn-box {position:absolute; top:450px; left:50%; overflow:hidden}
 #contents .cont-banner .rolling-btn-box .rolling-btn {float:left}
 #contents .cont-banner .rolling-btn-box .rolling-btn li.roll {float:left; margin-right:5px}
@@ -64,6 +63,7 @@
 #contents .cont-banner .rolling-btn-box .s-btn li.stop-btn a { background:url(../images/icon/icon-set.png) no-repeat; background-position:0 -154px}
 #contents .cont-banner .rolling-btn-box .s-btn li.start-btn {display:none}
 #contents .cont-banner .rolling-btn-box .s-btn li.start-btn a {background:url(../images/icon/icon-set.png) no-repeat; background-position:0 -175px;}
+
 #contents .cont-banner .arrows ul li.arrow {position:absolute; top:222px}
 #contents .cont-banner .arrows ul li.arrow-L {left:40px}
 #contents .cont-banner .arrows ul li.arrow-R {right:40px}
@@ -71,12 +71,12 @@
 #contents .cont-banner .arrows ul li.arrow-L a {background:url(../images/icon/icon-set.png) no-repeat; background-position:0 0;}
 #contents .cont-banner .arrows ul li.arrow-R a {background:url(../images/icon/icon-set.png) no-repeat; background-position:0 -56px;}
 
-/* 콘텐츠 공통 레이아웃 */
+/* cont-box 공통 레이아웃 */
 #contents .cont-box {margin-top:100px; overflow:hidden}
 #contents .cont-box h3 {font-size:40px; margin-bottom:20px; font-weight:bold; letter-spacing:-4px}
 #contents .cont-box .sub-title {position:absolute; top:27px; left:200px; font-size:15px;}
 
-/* 콘텐츠 공통 레아아웃 - 물품정보 */
+/* cont-box 공통 레아아웃 - 물품정보 */
 #contents .cont-box .pro-info .comment {}
 #contents .cont-box .pro-info .name {font-size:18px; font-weight:bold;}
 #contents .cont-box .pro-info .price {}
@@ -86,17 +86,18 @@
 #contents .cont-box .pro-info .price .percent {display:none}
 #contents .cont-box .pro-info .price .totoal {}
 
-/* contents 공통 레이아웃 - 버튼*/
-/*더보기버튼*/
+/* cont-box 공통 레이아웃 - 버튼*/
+/* 더보기 버튼 */
 #contents .cont-box .more-btn {font-size:20px; position:relative; padding-right:15px; display:inline-block}
 #contents .cont-box .more-btn:after {content:''; background:url(../images/icon/icon-set.png) no-repeat; width:10px; height:17px; background-position:0 -256px; position:absolute; top:7px; left:58px}
+
 
 /* MD's PICK */
 #contents .cont-box .md-pick {position:relative;}
 #contents .cont-box .md-pick .pick {overflow:hidden}
-#contents .cont-box .md-pick .pick .hash-tag {position:absolute; top:22px; font-size:18px; text-decoration:underline}
-#contents .cont-box .md-pick .pick .hash-tag:hover {color:#6d9479}
-#contents .cont-box .md-pick .pick .hash-tag.on {color:#6d9479}
+#contents .cont-box .md-pick .pick .hash-tag {position:absolute; top:22px; font-size:18px;}
+#contents .cont-box .md-pick .pick .hash-tag:hover {color:#496a53; text-decoration:underline}
+#contents .cont-box .md-pick .pick .hash-tag.on {color:#496a53; text-decoration:underline}
 #contents .cont-box .md-pick .pick .hash-tag.tag1 {left:200px;}
 #contents .cont-box .md-pick .pick .hash-tag.tag2 {left:320px;}
 #contents .cont-box .md-pick .pick .hash-tag.tag3 {left:440px;}

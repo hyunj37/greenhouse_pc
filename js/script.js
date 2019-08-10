@@ -174,7 +174,7 @@ function slideR() {
 
         var pcnt = Math.abs(position2/listWid2);
         $('.interior_view li').hide();
-        $('.interior_view li').eq(pcnt).fadeIn();
+        $('.interior_view li').eq(pcnt).fadeIn('fast');
         });
 }
 
@@ -187,8 +187,8 @@ function slideL() {
     $('.interior-subject .subject-box').stop().animate({left:position2},'fast');
 
     var pcnt = Math.abs(position2/listWid2);
-    $('.interior_view li').hide('fast');
-    $('.interior_view li').eq(pcnt).fadeIn();
+    $('.interior_view li').hide();
+    $('.interior_view li').eq(pcnt).fadeIn('fast');
 }
 
 $('.cont-arrow-R').click(function(){
