@@ -18,16 +18,18 @@
 #header .main-head {height:99px; padding-top:51px; position:relative}
 #header .main-head h1 {float:left;}
 #header .main-head h1 a {display:block; overflow:hidden; text-indent:-9999px; width:300px; height:47px; background:url(../images/logo.jpg) no-repeat;}
-#header .main-head ul.gnb {overflow:hidden; float:left; margin:10px 0 0 40px;}
-#header .main-head ul.gnb li {float:left; margin-left:40px; padding-bottom:62px;}
+#header .main-head ul.gnb {overflow:hidden; float:left; margin:10px 0 0 60px;}
+#header .main-head ul.gnb li {float:left; padding:0 20px 62px;}
+#header .main-head ul.gnb li.on a {color:#496a53}
 #header .main-head ul.gnb li a {font-size:18px; font-weight:700}
-#header .main-head .gnb-sub {display:none; width:100%; padding:20px 0; background-color:#fff; position:absolute; top:150px; border-top:1px solid #eee; z-index:100}
+#header .main-head .gnb-sub {display:none; width:100%; padding:30px 0; background-color:#fff; position:absolute; top:150px; border-top:1px solid #eee; z-index:100}
 #header .main-head .gnb-sub .gnb-sub-inner {margin-left:360px;}
 #header .main-head .gnb-sub .gnb-sub-inner li {float:left; width:106px; text-align:center}
 #header .main-head .gnb-sub .gnb-sub-inner li.gnb-sub1 {margin-right:3px}
-#header .main-head .gnb-sub .gnb-sub-inner li dl dd {margin-bottom:5px}
+#header .main-head .gnb-sub .gnb-sub-inner li dl dd {margin-bottom:10px}
 #header .main-head .gnb-sub .gnb-sub-inner li dl dd:last-child {margin:0}
-#header .main-head .gnb-sub .gnb-sub-inner li a {font-size:14px}
+#header .main-head .gnb-sub .gnb-sub-inner li dl dd a {font-size:14px}
+#header .main-head .gnb-sub .gnb-sub-inner li dl dd:hover a {color:#496a53;}
 #header .main-head .search-form {position:relative; float:right; margin-top:8px; width:230px; height:33px; border-radius:16px; padding:0 40px 0 20px; background-color:#eee;}
 #header .main-head .search-form input {width:100%; border:none; background-color:#eee; height:33px;}
 #header .main-head .search-form .search-btn {position:absolute; top:0; right:10px; text-indent:-999px; overflow:hidden; width:33px; height:33px; background:url(../images/icon/search-icon.png) no-repeat;}

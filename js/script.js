@@ -3,13 +3,12 @@ $('.gnb li').mouseover(function(){
     $('.gnb li').removeClass('on');
     $(this).addClass('on');
     $('.gnb-sub').show().unbind('mouseover').unbind('mouseleave')
-    .mouseover(function(){$(this).stop().slideDown();})
-    .mouseleave(function(){$(this).stop().slideUp();});
+    .mouseover(function(){$(this).show();})
+    .mouseleave(function(){$(this).hide();});
 });
-
 $('.gnb li').mouseleave(function(){
     $('.gnb li').removeClass('on');
-    $('.gnb-sub').stop().slideUp('fast');
+    $('.gnb-sub').hide();
 });
 
 //메인배너//
