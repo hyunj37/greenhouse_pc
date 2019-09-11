@@ -26,10 +26,10 @@
 #header .main-head .gnb-sub .gnb-sub-inner {margin-left:360px;}
 #header .main-head .gnb-sub .gnb-sub-inner li {float:left; width:106px; text-align:center}
 #header .main-head .gnb-sub .gnb-sub-inner li.gnb-sub1 {margin-right:3px}
-#header .main-head .gnb-sub .gnb-sub-inner li dl dd {margin-bottom:10px}
-#header .main-head .gnb-sub .gnb-sub-inner li dl dd:last-child {margin:0}
-#header .main-head .gnb-sub .gnb-sub-inner li dl dd a {font-size:14px}
-#header .main-head .gnb-sub .gnb-sub-inner li dl dd:hover a {color:#496a53;}
+#header .main-head .gnb-sub .gnb-sub-inner li ul li {margin-bottom:10px}
+#header .main-head .gnb-sub .gnb-sub-inner li ul li:last-child {margin:0}
+#header .main-head .gnb-sub .gnb-sub-inner li ul li a {font-size:14px}
+#header .main-head .gnb-sub .gnb-sub-inner li ul li:hover a {color:#496a53;}
 #header .main-head .search-form {position:relative; float:right; margin-top:8px; width:230px; height:33px; border-radius:16px; padding:0 40px 0 20px; background-color:#eee;}
 #header .main-head .search-form input {width:100%; border:none; background-color:#eee; height:33px;}
 #header .main-head .search-form .search-btn {position:absolute; top:0; right:10px; text-indent:-999px; overflow:hidden; width:33px; height:33px; background:url(../images/icon/search-icon.png) no-repeat;}
@@ -176,7 +176,7 @@
 #contents .cont-box .info .contact .sns-list li:last-child {margin-right:0}
 
 
-/* footer */
+/** footer **/
 #footer {overflow:hidden; margin-top:100px; background-color:#eee; height:230px; padding-top:90px}
 #footer .slogo {width:236px; height:30px; text-indent:-9999px; overflow:hidden; background:url(../images/logo2.png) no-repeat; float:left; margin-right:94px;}
 #footer .co-info {float:left; font-size:14px}
