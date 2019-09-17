@@ -109,7 +109,7 @@
 #contents .cont-box .md-pick .pick .pro-info {margin-top:10px}
 
 /* 중간 띠배너 */
-#contents .cont-box .banner-bar {margin-top:100px; background-color:#e7fc90}
+#contents .cont-box .banner-bar {margin-top:100px; background-color:#205f1a/*background-color:#e7fc90*/}
 
 /* BEST ITEM */
 #contents .cont-box .best-item {margin-top:100px; overflow:hidden}
