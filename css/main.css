@@ -32,7 +32,7 @@
 #header .main-head .gnb-sub .gnb-sub-inner li ul li:hover a {color:#193e27}
 #header .main-head .search-form {position:relative; float:right; margin-top:8px; width:230px; height:33px; border-radius:16px; padding:0 40px 0 20px; background-color:#eee}
 #header .main-head .search-form input {width:100%; border:none; background-color:#eee; height:33px}
-#header .main-head .search-form .search-btn {position:absolute; top:0; right:10px; text-indent:-999px; overflow:hidden; width:33px; height:33px; background:url(../images/icon/search-icon.png) no-repeat}
+#header .main-head .search-form .search-btn {position:absolute; top:0; right:10px; text-indent:-999px; overflow:hidden; width:33px; height:33px; background:url(../images/icons/search-icon.png) no-repeat}
 
 /** contents **/
 /* visual banner */
@@ -57,21 +57,21 @@
 #contents .cont-banner .rolling-btn-box {position:absolute; top:450px; left:50%; overflow:hidden}
 #contents .cont-banner .rolling-btn-box .rolling-btn {float:left}
 #contents .cont-banner .rolling-btn-box .rolling-btn li.roll {float:left; margin-right:5px}
-#contents .cont-banner .rolling-btn-box .rolling-btn li.roll a {display:block; text-indent:-999px; overflow:hidden; width: 20px; height: 20px; background:url(../images/icon/icon-set.png) no-repeat; background-position:0 -133px}
-#contents .cont-banner .rolling-btn-box .rolling-btn li.roll.on a { background:url(../images/icon/icon-set.png) no-repeat; background-position:0 -112px}
+#contents .cont-banner .rolling-btn-box .rolling-btn li.roll a {display:block; text-indent:-999px; overflow:hidden; width: 20px; height: 20px; background:url(../images/icons/icon-set.png) no-repeat; background-position:0 -133px}
+#contents .cont-banner .rolling-btn-box .rolling-btn li.roll.on a { background:url(../images/icons/icon-set.png) no-repeat; background-position:0 -112px}
 #contents .cont-banner .rolling-btn-box .s-btn {float:left; position:relative; width:20px; height:20px}
 #contents .cont-banner .rolling-btn-box .s-btn li {position:absolute; top:0; left:0}
 #contents .cont-banner .rolling-btn-box .s-btn li a {display:block; width:20px; height:20px; text-indent:-9999px; overflow:hidden}
-#contents .cont-banner .rolling-btn-box .s-btn li.stop-btn a { background:url(../images/icon/icon-set.png) no-repeat; background-position:0 -154px}
+#contents .cont-banner .rolling-btn-box .s-btn li.stop-btn a { background:url(../images/icons/icon-set.png) no-repeat; background-position:0 -154px}
 #contents .cont-banner .rolling-btn-box .s-btn li.start-btn {display:none}
-#contents .cont-banner .rolling-btn-box .s-btn li.start-btn a {background:url(../images/icon/icon-set.png) no-repeat; background-position:0 -175px}
+#contents .cont-banner .rolling-btn-box .s-btn li.start-btn a {background:url(../images/icons/icon-set.png) no-repeat; background-position:0 -175px}
 
 #contents .cont-banner .arrows ul li.arrow {position:absolute; top:222px}
 #contents .cont-banner .arrows ul li.arrow-L {left:40px}
 #contents .cont-banner .arrows ul li.arrow-R {right:40px}
 #contents .cont-banner .arrows ul li.arrow a {text-indent:-999px; overflow:hidden; display:block; width:28px; height:55px}
-#contents .cont-banner .arrows ul li.arrow-L a {background:url(../images/icon/icon-set.png) no-repeat; background-position:0 0}
-#contents .cont-banner .arrows ul li.arrow-R a {background:url(../images/icon/icon-set.png) no-repeat; background-position:0 -56px}
+#contents .cont-banner .arrows ul li.arrow-L a {background:url(../images/icons/icon-set.png) no-repeat; background-position:0 0}
+#contents .cont-banner .arrows ul li.arrow-R a {background:url(../images/icons/icon-set.png) no-repeat; background-position:0 -56px}
 
 /* cont-box 공통 레이아웃 */
 #contents .cont-box {margin-top:100px; overflow:hidden}
@@ -91,7 +91,7 @@
 /* cont-box 공통 레이아웃 - 버튼*/
 /* 더보기 버튼 */
 #contents .cont-box .more-btn {font-size:20px; position:relative; padding-right:15px; display:inline-block}
-#contents .cont-box .more-btn:after {content:''; background:url(../images/icon/icon-set.png) no-repeat; width:10px; height:17px; background-position:0 -256px; position:absolute; top:7px; left:58px}
+#contents .cont-box .more-btn:after {content:''; background:url(../images/icons/icon-set.png) no-repeat; width:10px; height:17px; background-position:0 -256px; position:absolute; top:7px; left:58px}
 
 
 /* MD's PICK */
@@ -130,7 +130,7 @@
 #contents .cont-box .new-item .list-arrow {position:absolute; right:10px; top:27px}
 #contents .cont-box .new-item .list-arrow li {float:left}
 #contents .cont-box .new-item .list-arrow li.list-arrow-L {margin-right:15px}
-#contents .cont-box .new-item .list-arrow li a {text-indent:-9999px; overflow:hidden; display:block; width:12px; height:21px; background:url(../images/icon/icon-set.png) no-repeat}
+#contents .cont-box .new-item .list-arrow li a {text-indent:-9999px; overflow:hidden; display:block; width:12px; height:21px; background:url(../images/icons/icon-set.png) no-repeat}
 #contents .cont-box .new-item .list-arrow li.list-arrow-L a {background-position:0 -274px}
 #contents .cont-box .new-item .list-arrow li.list-arrow-R a {background-position:0 -296px}
 #contents .cont-box .new-item .new-list {position:relative; height:292px; overflow:hidden}
@@ -156,7 +156,7 @@
 #contents .cont-box .interior .interior-article .cont-arrows li {position:absolute; top:310px}
 #contents .cont-box .interior .interior-article .cont-arrows li.cont-arrow-R {right:813px}
 #contents .cont-box .interior .interior-article .cont-arrows li.cont-arrow-L {left:87px}
-#contents .cont-box .interior .interior-article .cont-arrows li a {text-indent:-9990px; overflow:hidden; width:16px; height:29px; background:url(../images/icon/icon-set.png) no-repeat; display:block}
+#contents .cont-box .interior .interior-article .cont-arrows li a {text-indent:-9990px; overflow:hidden; width:16px; height:29px; background:url(../images/icons/icon-set.png) no-repeat; display:block}
 #contents .cont-box .interior .interior-article .cont-arrows li.cont-arrow-R a {background-position:0 -226px}
 #contents .cont-box .interior .interior-article .cont-arrows li.cont-arrow-L a {background-position:0 -196px}
 
