@@ -19,7 +19,7 @@ var len = $('.banner-box li').length-1;
 
 //원형 롤링버튼 생성
 for(var j=0; j<=len; j++){
-    $('.rolling-btn').append('<li class="roll"><a href="#">순차롤링버튼</a></li>');
+    $('.rolling-btn').append('<li class="roll"><a href="javascript:;">순차롤링버튼</a></li>');
 }
 var rollbox = $('.rolling-btn-box').width();
 $('.rolling-btn-box').css('margin-left', -(rollbox/2) );
